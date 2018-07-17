@@ -1,26 +1,9 @@
-describe App do
-  describe 'GET /reversename/:name' do
-    it 'sends a 200 status code' do
-      get '/reversename/victoria'
 
-      expect(last_response.status).to eq(200)
-    end
-
-    it 'renders the name backwards' do
-      get '/reversename/victoria'
-
-      expect(last_response.body).to include('airotciv')
-    end
-
-    it "isn't hard-coded" do
-      get '/reversename/joseph'
-
-      expect(last_response.body).to include('hpesoj')
-      expect(last_response.body).to_not include('airotciv')
-    end
-  end
-
-  describe 'GET /square/:number' do
+ 
+  get '/square/:number' do
+ 
+ 
+ get  '/square/:number' do
     it 'sends a 200 status code' do
       get '/square/4'
 
@@ -41,7 +24,7 @@ describe App do
     end
   end
 
-  describe 'GET /say/:number/:phrase' do
+  gets '/say/:number/:phrase' do
     it 'sends a 200 status code' do
       get '/say/3/show%20me%20the%20money'
 
