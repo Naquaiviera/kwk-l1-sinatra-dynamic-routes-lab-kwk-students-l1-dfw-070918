@@ -20,7 +20,7 @@ end
 
 gets '/say/:word1/:word2/:word3/:word4/:word5' do
 "#{params[:words]}#{params[:word]} #{params[:word3]}
-#{params[:word4]} #{params[:word5]}."
+#{params[:word4]} #{params[:word5]} #{params[:w]
 
 gets '/:operation/:number1/:number2' do
    operation = params[:operation]
@@ -40,7 +40,7 @@ gets '/:operation/:number1/:number2' do
   answer.to_s
  end
  
- end
+end
     
     
 
